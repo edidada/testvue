@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <MySelect />
+    <MySelect data.items="[
+      {id:11, name: '分类1'},
+      {id:22, name: '分类2'},
+      {id:33, name: '分类3'}
+    ]"/>
   </div>
 </template>
 

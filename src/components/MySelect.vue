@@ -1,6 +1,6 @@
 
 <template>
-  <div class="hello">
+  <div class="myselectorclass">
     <select v-model="selectItem" @change="selectFn($event)">
       <!--选择项的value值默认选择项文本 可动态绑定选择项的value值 更改v-model指令绑定数据-->
       <option v-for="item in items" v-bind:key="item.id" :value="item.name">{{item.name}}</option>
@@ -12,7 +12,7 @@
 <script>
 import Vue from 'vue'
 new Vue({
-  el: '#hello',
+  el: '#myselectorclass',
   data: {
     selectItem: '分类1',
     items: [
