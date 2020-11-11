@@ -6,11 +6,13 @@
       {id:22, name: '分类2'},
       {id:33, name: '分类3'}
     ]"/>
+<    <TestSelector></TestSelector>
   </div>
 </template>
 
 <script>
 import MySelect from './components/MySelect.vue'
+import TestSelector from './components/TestSelector.vue'
 
 export default {
   name: 'App',

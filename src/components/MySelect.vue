@@ -6,7 +6,14 @@
       <option v-for="item in items" v-bind:key="item.id" :value="item.name">{{item.name}}</option>
     </select>
     <div>{{selectItem}}</div>    <!--选择项的value值-->
+
+    <div>
+      <Select @on-change="getItemValue" v-model="formSend.code">
+        <Option :value="item.code" v-for="item in dataList" v-bind:key="item.id">{{item.name}}</Option>
+      </Select>
+    </div>
   </div>
+
 </template>
 
 <script>
@@ -31,12 +38,13 @@ new Vue({
 })
 export default {
   name: 'MySelect',
-  props: {
+  data:(){
+    return{
     items: [
       {id:11, name: '分类1'},
       {id:22, name: '分类2'},
       {id:33, name: '分类3'}
-    ]
+    ]}
   }
 }
 </script>
