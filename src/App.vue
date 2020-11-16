@@ -1,23 +1,29 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <MySelect data.items="[
-      {id:11, name: '分类1'},
-      {id:22, name: '分类2'},
-      {id:33, name: '分类3'}
-    ]"/>
-<    <TestSelector></TestSelector>
+<!--    <MySelect style="width:200px" data.items="[
+      {id:11, name: '分类11'},
+      {id:22, name: '分类22'},
+      {id:33, name: '分类33'}
+    ]"/>-->
+    <div style="width:200px">
+      <TestSelector></TestSelector>
+    </div>
   </div>
+
 </template>
 
 <script>
-import MySelect from './components/MySelect.vue'
+
+// import MySelect from './components/MySelect.vue'
 import TestSelector from './components/TestSelector.vue'
 
 export default {
   name: 'App',
   components: {
-    MySelect
+    // MySelect
+    // ,
+    TestSelector
   }
 }
 </script>
